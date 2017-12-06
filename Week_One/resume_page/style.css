@@ -16,14 +16,10 @@ a {
   text-decoration: none;
   display: block;
 }
-.main-header {
+header {
   margin-bottom: 80px;
   margin-top: 70px;
 }
 .my-image {
   height: 500px;
-}
-.info {
-  margin-left: 50px;
-  width: 500px;
 }
