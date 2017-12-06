@@ -2,6 +2,7 @@ h1 {
   text-align: center;
   font-family: 'Raleway', sans-serif;
   font-size: 40px;
+  text-transform: uppercase;
 }
 h3 {
   color: rgb(15, 15, 120);
@@ -10,16 +11,38 @@ h3 {
 img {
   display: block;
   margin: 5% auto;
+  border: 1px solid black;
 }
 a {
-  color: rgb(15, 15, 120);
-  text-decoration: none;
-  display: block;
+  color: black;
 }
 header {
   margin-bottom: 80px;
   margin-top: 70px;
 }
+body {
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+}
+table {
+  margin-bottom: 30px;
+}
 .my-image {
   height: 500px;
+}
+.about {
+  text-align: center;
+}
+.navigation {
+  text-decoration: none;
+  display: block;
+  font-size: 20px;
+  font-family: 'Raleway', sans-serif;
+  display: block;
+  padding: 15px;
+}
+.project-pic {
+  border-radius: 250px;
+  max-width: 500px;
+  max-height: 500px;
 }
