@@ -1,0 +1,29 @@
+h1 {
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-size: 40px;
+}
+h3 {
+  color: rgb(15, 15, 120);
+  font-family: 'Raleway', sans-serif;
+}
+img {
+  display: block;
+  margin: 5% auto;
+}
+a {
+  color: rgb(15, 15, 120);
+  text-decoration: none;
+  display: block;
+}
+.main-header {
+  margin-bottom: 80px;
+  margin-top: 70px;
+}
+.my-image {
+  height: 500px;
+}
+.info {
+  margin-left: 50px;
+  width: 500px;
+}
