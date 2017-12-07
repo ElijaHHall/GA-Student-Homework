@@ -55,3 +55,24 @@ for (let n = 1; n <= 100; n++) {
     console.log(n);
   }
 }
+
+
+//Answers for Getting to Know You
+
+const thom = ["Thom", 1000, "Christchurch"];
+const karolin = ["Karolin", 16, "New York"];
+const kristyn = ["Kristyn", 5, "Pittsburgh"];
+const matt = ["Matt H", 186, "Philadelphia"];
+
+// 1.
+thom[0] = "Gameboy"
+
+// 2.
+karolin[1] = karolin[1] + 1;
+
+// 3.
+matt[2] = "Gotham City";
+
+// 4.
+kristyn.pop();
+kristyn.push("Brooklyn");
