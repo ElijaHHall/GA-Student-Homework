@@ -166,7 +166,7 @@ for (let s = 0; s < thomsCloset.length; s++) {
   }
 }
 
-// Multiples of 3 and 5
+// Multiples of 3 and 5 :
 
 let sumOfMultiplesOfThreeOrFive = 0;
 
@@ -175,3 +175,32 @@ for (let u = 1; u < 1000; u++) {
     sumOfMultiplesOfThreeOrFive = sumOfMultiplesOfThreeOrFive + u;
   }
 }
+
+
+// Triangles :
+
+// 1.
+let createRightIsoscelesTriangle = function(argument) {
+  let row = "";
+  for (let v = 1; v <= argument; v++) {
+    row = row + "#";
+    console.log(row);
+  }
+}
+
+createRightIsoscelesTriangle(7);
+
+
+// 2.
+let createUpsideDownTriangle = function(argument) {
+  let rowArr = [];
+  for (let x = 1; x <= argument; x++) {
+    rowArr.push("#");
+  }
+  for (let y = argument; y >= 1; y--) {
+    console.log(rowArr.join(""));
+    rowArr.pop();
+  }
+}
+
+createUpsideDownTriangle(6);
