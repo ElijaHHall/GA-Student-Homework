@@ -87,3 +87,65 @@ const ninjaTurtles = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"];
 for (let p = 0; p < ninjaTurtles.length; p++) {
   console.log(ninjaTurtles[p].toUpperCase());
 }
+
+
+//Answers for Return of the Closets
+
+const kristynsCloset = [
+  "left shoe",
+  "cowboy boots",
+  "right sock",
+  "GA hoodie",
+  "green pants",
+  "yellow knit hat",
+  "marshmallow peeps"
+];
+
+// Thom's closet is more complicated. Check out this nested data structure!!
+const thomsCloset = [
+  [
+    // These are Thom's shirts
+    "grey button-up",
+    "dark grey button-up",
+    "light blue button-up",
+    "blue button-up",
+  ],[
+    // These are Thom's pants
+    "grey jeans",
+    "jeans",
+    "PJs"
+  ],[
+    // Thom's accessories
+    "wool mittens",
+    "wool scarf",
+    "raybans"
+  ]
+];
+
+// Alien Attire :
+
+let kristynsShoe = kristynsCloset.shift();
+thomsCloset[2].push(kristynsShoe);
+
+// Dress Us Up :
+
+const randomArticlePicker = function(array) {
+  return Math.floor(Math.random() * (array.length));
+}
+let tomsRandomShirt = function() {
+  return thomsCloset[0][randomArticlePicker(thomsCloset[0])];
+}
+let tomsRandomPants = function() {
+  return thomsCloset[1][randomArticlePicker(thomsCloset[1])];
+}
+let tomsRandomAcc = function() {
+  return thomsCloset[2][randomArticlePicker(thomsCloset[2])];
+}
+
+let generateTomsRandomOutfit = function() {
+  return "Tom will wear a " + tomsRandomShirt() + ", " + tomsRandomPants() + ", and " + tomsRandomAcc();
+}
+
+for (q = 0; q < 3; q++) {
+  console.log(generateTomsRandomOutfit() + " and Kristyn will wear " + kristynsCloset[0] + ", " + kristynsCloset[2] + ", " + kristynsCloset[3] + ", and " + kristynsCloset[4] + ".");
+}
