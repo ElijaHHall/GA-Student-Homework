@@ -76,3 +76,14 @@ matt[2] = "Gotham City";
 // 4.
 kristyn.pop();
 kristyn.push("Brooklyn");
+
+
+//Answers for Yell at the Ninja Turtles
+
+// 1.
+const ninjaTurtles = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"];
+
+// 2.
+for (let p = 0; p < ninjaTurtles.length; p++) {
+  console.log(ninjaTurtles[p].toUpperCase());
+}
