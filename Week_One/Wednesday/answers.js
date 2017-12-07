@@ -132,20 +132,36 @@ thomsCloset[2].push(kristynsShoe);
 const randomArticlePicker = function(array) {
   return Math.floor(Math.random() * (array.length));
 }
-let tomsRandomShirt = function() {
+let thomsRandomShirt = function() {
   return thomsCloset[0][randomArticlePicker(thomsCloset[0])];
 }
-let tomsRandomPants = function() {
+let thomsRandomPants = function() {
   return thomsCloset[1][randomArticlePicker(thomsCloset[1])];
 }
-let tomsRandomAcc = function() {
+let thomsRandomAcc = function() {
   return thomsCloset[2][randomArticlePicker(thomsCloset[2])];
 }
 
-let generateTomsRandomOutfit = function() {
-  return "Tom will wear a " + tomsRandomShirt() + ", " + tomsRandomPants() + ", and " + tomsRandomAcc();
+let generateThomsRandomOutfit = function() {
+  return "Thom will wear a " + thomsRandomShirt() + ", " + thomsRandomPants() + ", and " + thomsRandomAcc();
 }
 
-for (q = 0; q < 3; q++) {
-  console.log(generateTomsRandomOutfit() + " and Kristyn will wear " + kristynsCloset[0] + ", " + kristynsCloset[2] + ", " + kristynsCloset[3] + ", and " + kristynsCloset[4] + ".");
+for (let q = 0; q < 3; q++) {
+  console.log(generateThomsRandomOutfit() + " and Kristyn will wear " + kristynsCloset[0] + ", " + kristynsCloset[2] + ", " + kristynsCloset[3] + ", and " + kristynsCloset[4] + ".");
+}
+
+
+// Dirty Laundry :
+
+for (let r = 0; r < kristynsCloset.length; r++) {
+  console.log("WHIRR: Now washing " + kristynsCloset[r]);
+}
+
+
+// Inventory :
+
+for (let s = 0; s < thomsCloset.length; s++) {
+  for (let t = 0; t < thomsCloset[s].length; t++) {
+    console.log(thomsCloset[s][t]);
+  }
 }
