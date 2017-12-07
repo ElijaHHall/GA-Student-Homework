@@ -165,3 +165,13 @@ for (let s = 0; s < thomsCloset.length; s++) {
     console.log(thomsCloset[s][t]);
   }
 }
+
+// Multiples of 3 and 5
+
+let sumOfMultiplesOfThreeOrFive = 0;
+
+for (let u = 1; u < 1000; u++) {
+  if (u % 3 === 0 || u % 5 === 0) {
+    sumOfMultiplesOfThreeOrFive = sumOfMultiplesOfThreeOrFive + u;
+  }
+}
