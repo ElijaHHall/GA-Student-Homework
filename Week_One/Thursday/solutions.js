@@ -94,4 +94,28 @@ const sumArray = (array) => {
    }
  }
 
- printPrimes(97);
+ // printPrimes(97);
+
+
+// Answer for Insert Dash :
+
+const insertDash = (number) => {
+  let oddNumCount = 0;
+  let numAsArr = number.toString().split("");
+  let updatedNum = [];
+  for (let i = 0; i < numAsArr.length; i++) {
+    updatedNum.push(numAsArr[i]);
+    if (Number(numAsArr[i]) % 2 !== 0) {
+      oddNumCount++;
+      if (oddNumCount === 2) {
+        updatedNum.splice((updatedNum.length - 1), 0, "-");
+        oddNumCount = 1;
+      }
+    } else {
+      oddNumCount = 0;
+    }
+  }
+  return updatedNum.join('');
+}
+
+console.log(insertDash(454793));
