@@ -23,3 +23,19 @@ const checkPalindrome = (string) => {
 console.log(checkPalindrome("Radar"));
 
 console.log(checkPalindrome("Borscht"));
+
+
+//Answer for Digit Sum :
+//My solution assumes that only positive numbers will be potential arguments
+
+const sumDigits = (number) => {
+  let numAsArr = number.toString().split("");
+  let sum = 0;
+  for (let i = 0; i < numAsArr.length; i++) {
+    sum = sum + Number(numAsArr[i]);
+  }
+  return sum;
+}
+
+console.log(sumDigits(42));
+console.log(sumDigits(1254));
