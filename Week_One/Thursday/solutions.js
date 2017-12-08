@@ -60,4 +60,38 @@ const sumArray = (array) => {
  }
 
  console.log(sumArray([1, 2, 3, 4, 5, 6]));
- 
+
+
+ // Answers for Prime Numbers :
+
+ const checkPrime = (number) => {
+   if (number === 1) {
+     return false;
+   }
+   if (number === 2) {
+     return true;
+   }
+   let upperBound = Math.ceil(Math.sqrt(number));
+   for (let i = 2; i <= upperBound; i++) {
+     let numDividedByi = number / i;
+     if (numDividedByi === Math.floor(numDividedByi)) {
+       return false;
+     }
+   }
+   return true;
+ }
+
+ // console.log(checkPrime(5));
+ // console.log(checkPrime(16));
+ // console.log(checkPrime(31));
+ // console.log(checkPrime(59));
+
+ const printPrimes = (number) => {
+   for (let i = 2; i <= number; i++) {
+     if (checkPrime(i)) {
+       console.log(i);
+     }
+   }
+ }
+
+ printPrimes(97);
