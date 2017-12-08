@@ -11,3 +11,15 @@
 // a function does not stop the execution and the value within the console.log is
 // printed in the console but it does not go/is not saved anywhere else.  When you
 // use return you make the function return a value that can be used in other processes, functions, etc.
+
+//Answer for Palindrome :
+
+const checkPalindrome = (string) => {
+  let lowCaseString = string.toLowerCase();
+  let reversedStr = lowCaseString.split("").reverse().join("");
+  return lowCaseString === reversedStr;
+}
+
+console.log(checkPalindrome("Radar"));
+
+console.log(checkPalindrome("Borscht"));
