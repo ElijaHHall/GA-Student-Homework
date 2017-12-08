@@ -12,7 +12,7 @@
 // printed in the console but it does not go/is not saved anywhere else.  When you
 // use return you make the function return a value that can be used in other processes, functions, etc.
 
-//Answer for Palindrome :
+// Answer for Palindrome :
 
 const checkPalindrome = (string) => {
   let lowCaseString = string.toLowerCase();
@@ -25,8 +25,8 @@ console.log(checkPalindrome("Radar"));
 console.log(checkPalindrome("Borscht"));
 
 
-//Answer for Digit Sum :
-//My solution assumes that only positive numbers will be potential arguments
+// Answer for Digit Sum :
+// My solution assumes that only positive numbers will be potential arguments
 
 const sumDigits = (number) => {
   let numAsArr = number.toString().split("");
@@ -39,3 +39,11 @@ const sumDigits = (number) => {
 
 console.log(sumDigits(42));
 console.log(sumDigits(1254));
+
+// Answer for Pythagoras :
+
+const calculateSide = (sideA, sideB) => {
+  return Math.sqrt((sideA * sideA) + (sideB * sideB));
+}
+
+console.log(calculateSide(8, 6));
